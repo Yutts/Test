@@ -13,6 +13,29 @@ int main()
 	cin >> b;
 	cout << "Chon phep toan (+,-) ";
 	cin >> phepToan;
+	if(phepToan=='-'){
+		int kq = hieu(a,b);
+		cout<<kq;
+	}
+	if(phepToan=='+'){
+		int kq = tong(a,b);
+		cout<<kq;
+	}
+	if(phepToan=='*'){
+		int kq = tich(a,b);
+		cout<<kq;
+	}
 	system("pause");
 	return 0;
+}
+
+int hieu(int a, int b){
+	return a-b;
+}
+int tong(int a, int b){
+	return a+b;
+
+}
+int tich(int a, int b){
+	return a*b;
 }
